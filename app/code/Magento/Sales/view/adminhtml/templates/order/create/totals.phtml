@@ -36,6 +36,14 @@
             <?= $block->escapeHtml(__('Email Order Confirmation')) ?>
         </label>
     </div>
+    <?php elseif; ?>
+    <div class="admin__field admin__field-option field-email-order-confirmation">
+        <input type="checkbox" id="send_confirmation" name="order[send_confirmation]" value="1" checked="unchecked"
+               class="admin__control-checkbox"/>
+        <label for="send_confirmation" class="admin__field-label">
+            <?= $block->escapeHtml(__('Email Order Confirmation')) ?>
+        </label>
+    </div>    
     <?php endif; ?>
     <div class="actions">
         <?= $block->getButtonHtml(__('Submit Order'), 'order.submit()', 'save primary') ?>
